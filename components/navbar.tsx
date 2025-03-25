@@ -84,19 +84,21 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-6 items-center">
-          {["about", "skills", "projects", "Resume"].map((section) => (
-            <button
-              key={section}
-              onClick={() => handleScroll(section)}
-              className={`text-sm transition-colors ${
-                theme === "light"
-                  ? "text-gray-600 hover:text-[#070707]"
-                  : "text-gray-400 hover:text-white"
-              }`}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </button>
-          ))}
+          {["about", "skills", "projects", "Resume", "Certifications"].map(
+            (section) => (
+              <button
+                key={section}
+                onClick={() => handleScroll(section)}
+                className={`text-sm transition-colors ${
+                  theme === "light"
+                    ? "text-gray-600 hover:text-[#070707]"
+                    : "text-gray-400 hover:text-white"
+                }`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </button>
+            )
+          )}
           {/* Contact Me button with special styling */}
           <button
             onClick={() => handleScroll("contact")}
@@ -119,19 +121,21 @@ export default function Navbar() {
           }`}
         >
           <div className="flex flex-col items-center pt-10 gap-8">
-            {["about", "skills", "projects", "Resume"].map((section) => (
-              <button
-                key={section}
-                onClick={() => handleScroll(section)}
-                className={`text-lg font-medium transition-colors ${
-                  theme === "light"
-                    ? "text-gray-800 hover:text-black"
-                    : "text-gray-200 hover:text-white"
-                }`}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </button>
-            ))}
+            {["about", "skills", "projects", "Resume", "Certifications"].map(
+              (section) => (
+                <button
+                  key={section}
+                  onClick={() => handleScroll(section)}
+                  className={`text-lg font-medium transition-colors ${
+                    theme === "light"
+                      ? "text-gray-800 hover:text-black"
+                      : "text-gray-200 hover:text-white"
+                  }`}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </button>
+              )
+            )}
             {/* Contact Me button in mobile menu */}
             <button
               onClick={() => handleScroll("contact")}
