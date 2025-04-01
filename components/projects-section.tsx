@@ -31,6 +31,15 @@ const projects = [
     tags: ["Python", "Javascript", "SocketIO"],
     link: "https://python-javascript-chat-app.onrender.com/",
   },
+  {
+    id: 4,
+    title: "Gym Ecommerce Store",
+    description:
+      "A mock eCommerce app showcasing gym equipment and accessories, built with Next.js, TypeScript, and Tailwind. Features product listings, a shopping cart, and checkout flow.",
+    image: "/gym-ecommerce.png",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    link: "https://gym-ecommerce-store.vercel.app/",
+  },
 ];
 
 export default function ProjectsSection() {
