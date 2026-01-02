@@ -14,15 +14,6 @@ const projects = [
     link: "https://brolyfitness.vercel.app/",
   },
   {
-    id: 2,
-    title: "Text to Speech & translation App",
-    description:
-      "A real-time text to Speech & translation application. Users can convert text into speech and translate text from one language to another using the Google Translate API and the Javascript Speech API.",
-    image: "/Screenshot 2025-02-21 173917.png",
-    tags: ["Vercel", "Javascript", "Api"],
-    link: "https://chatter-cove-app.vercel.app/",
-  },
-  {
     id: 3,
     title: "Multi user chat application",
     description:
